@@ -31,7 +31,7 @@ __copyright__ = '(C) 2019 by Luiz Otávio Carneiro Filho'
 __revision__ = '$Format:%H$'
 
 from qgis.core import QgsProcessingProvider
-from .model import IndoorSchematic
+from .modelo20_08_20 import IndoorSchematic
 
 
 class UFPRCampusMapProvider(QgsProcessingProvider):
@@ -63,7 +63,7 @@ class UFPRCampusMapProvider(QgsProcessingProvider):
         string should be a unique, short, character only string, eg "qgis" or
         "gdal". This string should not be localised.
         """
-        return 'Indoor Schematic'
+        return 'UFPR Campus Map'
 
     def name(self):
         """
@@ -72,7 +72,7 @@ class UFPRCampusMapProvider(QgsProcessingProvider):
 
         This string should be short (e.g. "Lastools") and localised.
         """
-        return self.tr('Indoor Schematic')
+        return self.tr('UFPR Campus Map')
 
     def icon(self):
         """
